@@ -1,0 +1,6 @@
+factory\BrowserFactory.class
+utility\BaseUtilities.class
+pages\MyAccount.class
+pages\Homepage.class
+pages\CategoryPage.class
+pages\SignInPage.class

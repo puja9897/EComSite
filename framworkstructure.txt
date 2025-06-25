@@ -1,0 +1,93 @@
+/src
+  /main
+    /java
+      /com.company.project
+        /base                # WebDriver setup, TestBase class
+        /pages               # Page Object classes
+        /utils               # Utilities (Waits, Logs, Config Reader, Excel Reader)
+        /runner              # Cucumber Test Runner classes
+        /listeners           # TestNG Listeners for logging and reporting
+        /factory             # BrowserFactory, DriverFactory for browser init
+  /test
+    /resources
+      /features             # Cucumber feature files
+      /testdata             # Test data files (CSV, JSON, Excel)
+      /configs              # config.properties, environment files
+
+pom.xml                    # Maven dependencies and build config
+
+/test-output                # Test reports and screenshots output
+/logs                       # Logs of test execution
+/Jenkinsfile                # Jenkins pipeline definition (declarative)
+
+===============================================================
+
+Tech Stack:
+Selenium
+Java
+TestNG
+Cucumber
+Extent Reports
+
+Framework : BDD
+===============================================================
+
+
+Dependencies used in the project:
+| Dependency                                             | Purpose                                                                                                                                                                             |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`io.cucumber:cucumber-java`**                        | Provides core Cucumber functionality for Java. It allows you to define step definitions in Java corresponding to Gherkin feature steps.                                             |
+| **`org.testng:testng`**                                | TestNG is the test execution framework used here with Cucumber (via `AbstractTestNGCucumberTests`). It allows parallel execution, test suites, listeners, and reporting.            |
+| **`org.seleniumhq.selenium:selenium-java`**            | Selenium WebDriver library for automating browser interactions. It includes browser drivers, WebElement APIs, waits, Actions class, etc.                                            |
+| **`io.cucumber:cucumber-testng`**                      | Allows integration between Cucumber and TestNG. It enables running feature files using TestNG and helps plug Cucumber into the TestNG lifecycle.                                    |
+| **`io.github.bonigarcia:webdrivermanager`**            | Automatically downloads and sets up browser drivers (like ChromeDriver, GeckoDriver) at runtime. Eliminates the need to manually set up `webdriver.chrome.driver`.                  |
+| **`org.slf4j:slf4j-simple`**                           | A simple logging backend for SLF4J (used internally by various libraries like Selenium or ExtentReports). This ensures log messages are printed to console.                         |
+| **`tech.grasshopper:extentreports-cucumber7-adapter`** | This is the official ExtentReports adapter for Cucumber v7+. It listens to Cucumber execution and generates Extent HTML reports automatically.                                      |
+| **`com.aventstack:extentreports`**                     | The core library of ExtentReports which enables creation of beautiful HTML reports. Adapter depends on this library internally. You can also use it for custom reporting if needed. |
+
+
+===============================================================
+
+Features:
+It has all the scenarios for a feature in Gherkin language i.e. Given, When,Then, And
+
+===============================================================
+
+
+Pages:
+Individual java class created for each page which has private web elements and public methods to perform action on the web elements.
+A public constructor of the class which initializes the driver and the elements using PageFactory.initElements.
+@FindBy(locator strategy) annotation is used to find the elements.
+
+Concepts Used : POM, Encapsulation
+
+===============================================================
+
+Hooks:
+Cucumber @Before and @After hooks are used for driver setup and tear down
+Here the WebDriver instance public and static meaning it can be accessed from anywhere without creating an object of the Hooks class.
+===============================================================
+
+StepDefinitions:
+It has actual implementation/steps to test the scenarios present in feature file.
+WebDriver driver is accessing a shared WebDriver instance from Hooks.
+Objects of page classes are created and its constructors are called by passing driver as an argument.
+Methods are called using object of page classes.
+
+Concepts Used : POM, Encapsulation, BDD, Hooks Pattern
+
+===============================================================
+
+Runner:
+
+Test runner is the class through which the tests run. It extends the AbstractTestNGCucumberTests
+class and uses @CucumberOptions. 
+@CucumberOptions has the features, glue for step definitions, plugin for reporting.
+
+===============================================================
+
+Report:
+
+Extent report Cucumber plugin is used in the Runner class. extent.properties has the target, report name,
+ basefolder name and date time pattern.
+ 
