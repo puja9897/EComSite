@@ -5,31 +5,26 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class BrowserFactory {
 
-	public static WebDriver browser(String browser) {
-		switch (browser) {
-		case "chrome":
-			WebDriverManager.chromedriver().setup();
-			new ChromeDriver();
-			break;
+    public static WebDriver initBrowser(String browser) {
+        WebDriver driver;
+        switch (browser.toLowerCase()) {
+            case "chrome":
+                driver = new ChromeDriver();
+                break;
 
-		case "edge":
-			WebDriverManager.edgedriver().setup();
-			new EdgeDriver();
-			break;
+            case "edge":
+                driver = new EdgeDriver();
+                break;
 
-		case "firefox":
-			WebDriverManager.firefoxdriver().setup();
-			new FirefoxDriver();
-			break;
+            case "firefox":
+                driver = new FirefoxDriver();
+                break;
 
-		default:
-			System.out.println("Browser not supported or invalid browser.");
-		}
-		return null;
-
-	}
+            default:
+                throw new RuntimeException("Browser not supported: " + browser);
+        }
+        return driver;
+    }
 }

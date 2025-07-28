@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="0" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-25T16:12:56 IST" name="Surefire suite" finished-at="2025-06-25T16:13:56 IST" duration-ms="59778">
+  <suite started-at="2025-07-28T19:02:25 IST" name="Surefire suite" finished-at="2025-07-28T19:02:27 IST" duration-ms="1851">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6379eb]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5b239d7d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-06-25T16:12:56 IST" name="Surefire test" finished-at="2025-06-25T16:13:56 IST" duration-ms="59778">
+    <test started-at="2025-07-28T19:02:25 IST" name="Surefire test" finished-at="2025-07-28T19:02:27 IST" duration-ms="1851">
       <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@6379eb]" started-at="2025-06-25T16:12:56 IST" name="setUpClass" finished-at="2025-06-25T16:12:57 IST" duration-ms="468" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@5b239d7d]" started-at="2025-07-28T19:02:25 IST" name="setUpClass" finished-at="2025-07-28T19:02:25 IST" duration-ms="515" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@776015fc]]>
+                <![CDATA[org.testng.TestRunner@6eb17ec8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6379eb]" started-at="2025-06-25T16:12:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-25T16:13:06 IST" duration-ms="9154" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5b239d7d]" started-at="2025-07-28T19:02:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-28T19:02:26 IST" duration-ms="836" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,10 +34,21 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Browser not supported: browser]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Browser not supported: browser
+at factory.BrowserFactory.initBrowser(BrowserFactory.java:26)
+at stepDefinitions.Hooks.setup(Hooks.java:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6379eb]" started-at="2025-06-25T16:13:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-25T16:13:14 IST" duration-ms="8224" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5b239d7d]" started-at="2025-07-28T19:02:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-28T19:02:26 IST" duration-ms="10" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -50,10 +61,21 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Browser not supported: browser]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Browser not supported: browser
+at factory.BrowserFactory.initBrowser(BrowserFactory.java:26)
+at stepDefinitions.Hooks.setup(Hooks.java:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6379eb]" started-at="2025-06-25T16:13:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-25T16:13:23 IST" duration-ms="8424" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5b239d7d]" started-at="2025-07-28T19:02:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-28T19:02:26 IST" duration-ms="12" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -66,10 +88,21 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Browser not supported: browser]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Browser not supported: browser
+at factory.BrowserFactory.initBrowser(BrowserFactory.java:26)
+at stepDefinitions.Hooks.setup(Hooks.java:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6379eb]" started-at="2025-06-25T16:13:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-25T16:13:40 IST" duration-ms="16861" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5b239d7d]" started-at="2025-07-28T19:02:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-28T19:02:26 IST" duration-ms="11" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -82,10 +115,21 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Browser not supported: browser]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Browser not supported: browser
+at factory.BrowserFactory.initBrowser(BrowserFactory.java:26)
+at stepDefinitions.Hooks.setup(Hooks.java:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6379eb]" started-at="2025-06-25T16:13:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-25T16:13:48 IST" duration-ms="8590" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5b239d7d]" started-at="2025-07-28T19:02:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-28T19:02:26 IST" duration-ms="15" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -98,10 +142,21 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Browser not supported: browser]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Browser not supported: browser
+at factory.BrowserFactory.initBrowser(BrowserFactory.java:26)
+at stepDefinitions.Hooks.setup(Hooks.java:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6379eb]" started-at="2025-06-25T16:13:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-25T16:13:56 IST" duration-ms="7626" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5b239d7d]" started-at="2025-07-28T19:02:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-28T19:02:26 IST" duration-ms="7" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -114,10 +169,21 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Browser not supported: browser]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Browser not supported: browser
+at factory.BrowserFactory.initBrowser(BrowserFactory.java:26)
+at stepDefinitions.Hooks.setup(Hooks.java:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@6379eb]" started-at="2025-06-25T16:13:56 IST" name="tearDownClass" finished-at="2025-06-25T16:13:56 IST" duration-ms="383" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@5b239d7d]" started-at="2025-07-28T19:02:26 IST" name="tearDownClass" finished-at="2025-07-28T19:02:27 IST" duration-ms="388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
