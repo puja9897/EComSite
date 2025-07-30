@@ -3,6 +3,8 @@
 <suite name="Suite" thread-count="3" parallel="tests">
   <test  name="chromeTest">
   <parameter name="browsers" value="chrome"></parameter>
+      <parameter name="os" value="windows"/>
+
     <classes>
             <class name="runner.TestRunner"/>
 
@@ -11,6 +13,8 @@
   
     <test  name="edgeTest">
   <parameter name="browsers" value="edge"></parameter>
+      <parameter name="os" value="windows"/>
+
     <classes>
             <class name="runner.TestRunner"/>
 
@@ -19,6 +23,8 @@
   
     <test  name="firefoxTest">
   <parameter name="browsers" value="firefox"></parameter>
+      <parameter name="os" value="windows"/>
+
     <classes>
             <class name="runner.TestRunner"/>
 

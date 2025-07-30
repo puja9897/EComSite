@@ -1,38 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="18" passed="15" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-30T13:34:34 IST" name="Default suite" finished-at="2025-07-30T13:34:46 IST" duration-ms="11458">
+  <suite started-at="2025-07-30T15:38:23 IST" name="Suite" finished-at="2025-07-30T15:40:13 IST" duration-ms="109232">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@60015ef5]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@1fb700ee]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@346d61be]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@747edf66]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-07-30T13:34:34 IST" name="Default test" finished-at="2025-07-30T13:34:46 IST" duration-ms="11458">
+    <test started-at="2025-07-30T15:38:23 IST" name="chromeTest" finished-at="2025-07-30T15:40:09 IST" duration-ms="105325">
       <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@60015ef5]" started-at="2025-07-30T13:34:34 IST" name="setUpClass" finished-at="2025-07-30T13:34:35 IST" duration-ms="614" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@1fb700ee]" started-at="2025-07-30T15:38:23 IST" name="setUpClass" finished-at="2025-07-30T15:38:24 IST" duration-ms="669" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7e34b127]]>
+                <![CDATA[org.testng.TestRunner@5b03b9fe]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:runner.TestRunner@60015ef5]" started-at="2025-07-30T13:34:35 IST" name="setUp" finished-at="2025-07-30T13:34:35 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:runner.TestRunner@1fb700ee]" started-at="2025-07-30T15:38:24 IST" name="setUp" finished-at="2025-07-30T15:38:24 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@60015ef5]" started-at="2025-07-30T13:34:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T13:34:45 IST" duration-ms="10408" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@1fb700ee]" started-at="2025-07-30T15:38:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T15:38:41 IST" duration-ms="16678" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,11 +55,479 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@60015ef5]" started-at="2025-07-30T13:34:45 IST" name="tearDownClass" finished-at="2025-07-30T13:34:46 IST" duration-ms="384" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@1fb700ee]" started-at="2025-07-30T15:38:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T15:38:56 IST" duration-ms="15385" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Navigate to a sub-category"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Category navigation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <a class="sf-with-ul" href="http://www.automationpractice.pl/index.php?id_category=4&controller=category"> could not be scrolled into view
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [24bfb7a6-c56c-4285-8f10-9d0a808b94e4, clickElement {id=b655e25c-e14d-43c8-b801-aa95f7b36298}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19004, moz:profile: C:\Users\pc\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (24bfb7a6-c56c-4285-8f10-9d0a808b94e4)] -> xpath: //a[@title='Tops']]
+Session ID: 24bfb7a6-c56c-4285-8f10-9d0a808b94e4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a class="sf-with-ul" href="http://www.automationpractice.pl/index.php?id_category=4&controller=category"> could not be scrolled into view
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [24bfb7a6-c56c-4285-8f10-9d0a808b94e4, clickElement {id=b655e25c-e14d-43c8-b801-aa95f7b36298}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19004, moz:profile: C:\Users\pc\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (24bfb7a6-c56c-4285-8f10-9d0a808b94e4)] -> xpath: //a[@title='Tops']]
+Session ID: 24bfb7a6-c56c-4285-8f10-9d0a808b94e4
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy43.click(Unknown Source)
+at pages.Homepage.clickSubCategoryTop(Homepage.java:105)
+at stepDefinitions.CategorySteps.clicks_on_sub_category(CategorySteps.java:98)
+at ✽.Clicks on "Tops" sub category(file:///C:/Users/pc/eclipse-workspace/com.ecomsite/src/test/resources/features/Category.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@1fb700ee]" started-at="2025-07-30T15:38:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T15:39:13 IST" duration-ms="16488" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify breadcrumb navigation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Category navigation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@1fb700ee]" started-at="2025-07-30T15:39:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T15:39:38 IST" duration-ms="24786" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Filter products by Size and Color"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Category navigation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@1fb700ee]" started-at="2025-07-30T15:39:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T15:39:54 IST" duration-ms="16395" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["View Products in List"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Category navigation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@1fb700ee]" started-at="2025-07-30T15:39:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T15:40:08 IST" duration-ms="13954" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should be able to login with valid credentials."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@1fb700ee]" started-at="2025-07-30T15:40:08 IST" name="tearDownClass" finished-at="2025-07-30T15:40:09 IST" duration-ms="897" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runner.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- chromeTest -->
+    <test started-at="2025-07-30T15:38:23 IST" name="firefoxTest" finished-at="2025-07-30T15:40:13 IST" duration-ms="109131">
+      <class name="runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@747edf66]" started-at="2025-07-30T15:38:23 IST" name="setUpClass" finished-at="2025-07-30T15:38:24 IST" duration-ms="668" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@434a63ab]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:runner.TestRunner@747edf66]" started-at="2025-07-30T15:38:24 IST" name="setUp" finished-at="2025-07-30T15:38:24 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@747edf66]" started-at="2025-07-30T15:38:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T15:38:43 IST" duration-ms="19042" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Navigate to a Top-level category"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Category navigation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@747edf66]" started-at="2025-07-30T15:38:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T15:38:59 IST" duration-ms="15966" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Navigate to a sub-category"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Category navigation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <a class="sf-with-ul" href="http://www.automationpractice.pl/index.php?id_category=4&controller=category"> could not be scrolled into view
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7f0d73a2-e5a6-4ba9-8126-c8e1be6d2472, clickElement {id=782d17d1-e0d9-4958-a3b2-3457c2055eb4}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18112, moz:profile: C:\Users\pc\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (7f0d73a2-e5a6-4ba9-8126-c8e1be6d2472)] -> xpath: //a[@title='Tops']]
+Session ID: 7f0d73a2-e5a6-4ba9-8126-c8e1be6d2472]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a class="sf-with-ul" href="http://www.automationpractice.pl/index.php?id_category=4&controller=category"> could not be scrolled into view
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7f0d73a2-e5a6-4ba9-8126-c8e1be6d2472, clickElement {id=782d17d1-e0d9-4958-a3b2-3457c2055eb4}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18112, moz:profile: C:\Users\pc\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (7f0d73a2-e5a6-4ba9-8126-c8e1be6d2472)] -> xpath: //a[@title='Tops']]
+Session ID: 7f0d73a2-e5a6-4ba9-8126-c8e1be6d2472
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy43.click(Unknown Source)
+at pages.Homepage.clickSubCategoryTop(Homepage.java:105)
+at stepDefinitions.CategorySteps.clicks_on_sub_category(CategorySteps.java:98)
+at ✽.Clicks on "Tops" sub category(file:///C:/Users/pc/eclipse-workspace/com.ecomsite/src/test/resources/features/Category.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@747edf66]" started-at="2025-07-30T15:38:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T15:39:16 IST" duration-ms="17092" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify breadcrumb navigation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Category navigation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@747edf66]" started-at="2025-07-30T15:39:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T15:39:41 IST" duration-ms="24436" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Filter products by Size and Color"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Category navigation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@747edf66]" started-at="2025-07-30T15:39:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T15:39:58 IST" duration-ms="16808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["View Products in List"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Category navigation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@747edf66]" started-at="2025-07-30T15:39:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T15:40:13 IST" duration-ms="15017" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should be able to login with valid credentials."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@747edf66]" started-at="2025-07-30T15:40:13 IST" name="tearDownClass" finished-at="2025-07-30T15:40:13 IST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- firefoxTest -->
+    <test started-at="2025-07-30T15:38:23 IST" name="edgeTest" finished-at="2025-07-30T15:40:13 IST" duration-ms="109231">
+      <class name="runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@346d61be]" started-at="2025-07-30T15:38:23 IST" name="setUpClass" finished-at="2025-07-30T15:38:24 IST" duration-ms="668" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@37d4349f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:runner.TestRunner@346d61be]" started-at="2025-07-30T15:38:24 IST" name="setUp" finished-at="2025-07-30T15:38:24 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@346d61be]" started-at="2025-07-30T15:38:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T15:38:43 IST" duration-ms="19083" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Navigate to a Top-level category"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Category navigation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@346d61be]" started-at="2025-07-30T15:38:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T15:38:58 IST" duration-ms="14416" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Navigate to a sub-category"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Category navigation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <a class="sf-with-ul" href="http://www.automationpractice.pl/index.php?id_category=4&controller=category"> could not be scrolled into view
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8667df7f-e815-4763-8361-fb6419357606, clickElement {id=1cfda2dd-73a5-4608-a1c1-368b0dafd69e}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10772, moz:profile: C:\Users\pc\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (8667df7f-e815-4763-8361-fb6419357606)] -> xpath: //a[@title='Tops']]
+Session ID: 8667df7f-e815-4763-8361-fb6419357606]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a class="sf-with-ul" href="http://www.automationpractice.pl/index.php?id_category=4&controller=category"> could not be scrolled into view
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8667df7f-e815-4763-8361-fb6419357606, clickElement {id=1cfda2dd-73a5-4608-a1c1-368b0dafd69e}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10772, moz:profile: C:\Users\pc\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (8667df7f-e815-4763-8361-fb6419357606)] -> xpath: //a[@title='Tops']]
+Session ID: 8667df7f-e815-4763-8361-fb6419357606
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy43.click(Unknown Source)
+at pages.Homepage.clickSubCategoryTop(Homepage.java:105)
+at stepDefinitions.CategorySteps.clicks_on_sub_category(CategorySteps.java:98)
+at ✽.Clicks on "Tops" sub category(file:///C:/Users/pc/eclipse-workspace/com.ecomsite/src/test/resources/features/Category.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@346d61be]" started-at="2025-07-30T15:38:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T15:39:15 IST" duration-ms="17762" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify breadcrumb navigation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Category navigation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@346d61be]" started-at="2025-07-30T15:39:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T15:39:40 IST" duration-ms="25045" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Filter products by Size and Color"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Category navigation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@346d61be]" started-at="2025-07-30T15:39:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T15:39:57 IST" duration-ms="16776" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["View Products in List"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Category navigation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@346d61be]" started-at="2025-07-30T15:39:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-30T15:40:13 IST" duration-ms="15397" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should be able to login with valid credentials."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@346d61be]" started-at="2025-07-30T15:40:13 IST" name="tearDownClass" finished-at="2025-07-30T15:40:13 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- edgeTest -->
+  </suite> <!-- Suite -->
 </testng-results>

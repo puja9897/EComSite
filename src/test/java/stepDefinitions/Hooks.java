@@ -13,7 +13,6 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
 import factory.BrowserFactory;
 import io.cucumber.java.After;
@@ -38,9 +37,11 @@ public class Hooks {
 		p.load(file);
 		
 		String browser = System.getProperty("browser", "chrome"); // default to chrome
+		String os = System.getProperty("os", "windows");
+		String exe_env = p.getProperty("execution_env", "local");
+		String gridURL=p.getProperty("gridurl");
 
-
-		driver.set(BrowserFactory.initBrowser(browser));
+		driver.set(BrowserFactory.initBrowser(browser, os, exe_env, gridURL));
 		getDriver().get(p.getProperty("url"));
 		getDriver().manage().window().maximize();
 		logger.info("Browser is open" + browser);

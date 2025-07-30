@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runner.TestRunner" time="12.0" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runner.TestRunner" time="63.76" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Users\pc\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.7.v20250502-0916\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\pc\AppData\Local\Temp\surefire3225298717676176098\surefirebooter-20250729150203880_3.jar C:\Users\pc\AppData\Local\Temp\surefire3225298717676176098 2025-07-29T15-02-03_651-jvmRun1 surefire-20250729150203880_1tmp surefire_0-20250729150203880_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\pc\AppData\Local\Temp\surefire545873773939582231\surefirebooter-20250730153549002_3.jar C:\Users\pc\AppData\Local\Temp\surefire545873773939582231 2025-07-30T15-35-48_762-jvmRun1 surefire-20250730153549002_1tmp surefire_0-20250730153549002_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\pc\eclipse-workspace\com.ecomsite\target\test-classes;C:\Users\pc\eclipse-workspace\com.ecomsite\target\classes;C:\Users\pc\.m2\repository\io\cucumber\cucumber-java\7.23.0\cucumber-java-7.23.0.jar;C:\Users\pc\.m2\repository\io\cucumber\cucumber-core\7.23.0\cucumber-core-7.23.0.jar;C:\Users\pc\.m2\repository\io\cucumber\cucumber-gherkin\7.23.0\cucumber-gherkin-7.23.0.jar;C:\Users\pc\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.23.0\cucumber-gherkin-messages-7.23.0.jar;C:\Users\pc\.m2\repository\io\cucumber\gherkin\32.1.1\gherkin-32.1.1.jar;C:\Users\pc\.m2\repository\io\cucumber\messages\27.2.0\messages-27.2.0.jar;C:\Users\pc\.m2\repository\io\cucumber\testng-xml-formatter\0.3.1\testng-xml-formatter-0.3.1.jar;C:\Users\pc\.m2\repository\io\cucumber\query\13.5.0\query-13.5.0.jar;C:\Users\pc\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\pc\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\pc\.m2\repository\io\cucumber\datatable\7.23.0\datatable-7.23.0.jar;C:\Users\pc\.m2\repository\io\cucumber\cucumber-plugin\7.23.0\cucumber-plugin-7.23.0.jar;C:\Users\pc\.m2\repository\io\cucumber\docstring\7.23.0\docstring-7.23.0.jar;C:\Users\pc\.m2\repository\io\cucumber\html-formatter\21.10.1\html-formatter-21.10.1.jar;C:\Users\pc\.m2\repository\io\cucumber\junit-xml-formatter\0.7.1\junit-xml-formatter-0.7.1.jar;C:\Users\pc\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\pc\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\pc\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\pc\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\pc\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\pc\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\pc\.m2\repository\org\seleniumhq\selenium\selenium-java\4.33.0\selenium-java-4.33.0.jar;C:\Users\pc\.m2\repository\org\seleniumhq\selenium\selenium-api\4.33.0\selenium-api-4.33.0.jar;C:\Users\pc\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\pc\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.33.0\selenium-chrome-driver-4.33.0.jar;C:\Users\pc\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\pc\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.33.0\selenium-chromium-driver-4.33.0.jar;C:\Users\pc\.m2\repository\org\seleniumhq\selenium\selenium-json\4.33.0\selenium-json-4.33.0.jar;C:\Users\pc\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.33.0\selenium-manager-4.33.0.jar;C:\Users\pc\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v135\4.33.0\selenium-devtools-v135-4.33.0.jar;C:\Users\pc\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v136\4.33.0\selenium-devtools-v136-4.33.0.jar;C:\Users\pc\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.33.0\selenium-devtools-v137-4.33.0.jar;C:\Users\pc\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.33.0\selenium-edge-driver-4.33.0.jar;C:\Users\pc\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.33.0\selenium-firefox-driver-4.33.0.jar;C:\Users\pc\.m2\repository\org\seleniumhq\selenium\selenium-http\4.33.0\selenium-http-4.33.0.jar;C:\Users\pc\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.33.0\selenium-ie-driver-4.33.0.jar;C:\Users\pc\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.33.0\selenium-remote-driver-4.33.0.jar;C:\Users\pc\.m2\repository\com\google\guava\guava\33.4.8-jre\guava-33.4.8-jre.jar;C:\Users\pc\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\pc\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\pc\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\pc\.m2\repository\io\opentelemetry\opentelemetry-api\1.50.0\opentelemetry-api-1.50.0.jar;C:\Users\pc\.m2\repository\io\opentelemetry\opentelemetry-context\1.50.0\opentelemetry-context-1.50.0.jar;C:\Users\pc\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.50.0\opentelemetry-exporter-logging-1.50.0.jar;C:\Users\pc\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.50.0\opentelemetry-sdk-common-1.50.0.jar;C:\Users\pc\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.50.0\opentelemetry-sdk-extension-autoconfigure-spi-1.50.0.jar;C:\Users\pc\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.50.0\opentelemetry-sdk-extension-autoconfigure-1.50.0.jar;C:\Users\pc\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.50.0\opentelemetry-sdk-trace-1.50.0.jar;C:\Users\pc\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.50.0\opentelemetry-sdk-1.50.0.jar;C:\Users\pc\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.50.0\opentelemetry-sdk-metrics-1.50.0.jar;C:\Users\pc\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.50.0\opentelemetry-sdk-logs-1.50.0.jar;C:\Users\pc\.m2\repository\net\bytebuddy\byte-buddy\1.17.5\byte-buddy-1.17.5.jar;C:\Users\pc\.m2\repository\org\seleniumhq\selenium\selenium-os\4.33.0\selenium-os-4.33.0.jar;C:\Users\pc\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\pc\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.33.0\selenium-safari-driver-4.33.0.jar;C:\Users\pc\.m2\repository\org\seleniumhq\selenium\selenium-support\4.33.0\selenium-support-4.33.0.jar;C:\Users\pc\.m2\repository\io\cucumber\cucumber-testng\7.23.0\cucumber-testng-7.23.0.jar;C:\Users\pc\.m2\repository\io\github\bonigarcia\webdrivermanager\6.1.0\webdrivermanager-6.1.0.jar;C:\Users\pc\.m2\repository\com\google\code\gson\gson\2.13.0\gson-2.13.0.jar;C:\Users\pc\.m2\repository\com\google\errorprone\error_prone_annotations\2.37.0\error_prone_annotations-2.37.0.jar;C:\Users\pc\.m2\repository\com\github\docker-java\docker-java\3.5.0\docker-java-3.5.0.jar;C:\Users\pc\.m2\repository\com\github\docker-java\docker-java-core\3.5.0\docker-java-core-3.5.0.jar;C:\Users\pc\.m2\repository\com\github\docker-java\docker-java-api\3.5.0\docker-java-api-3.5.0.jar;C:\Users\pc\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.3\jackson-annotations-2.18.3.jar;C:\Users\pc\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\pc\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;C:\Users\pc\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\pc\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.5.0\docker-java-transport-httpclient5-3.5.0.jar;C:\Users\pc\.m2\repository\com\github\docker-java\docker-java-transport\3.5.0\docker-java-transport-3.5.0.jar;C:\Users\pc\.m2\repository\net\java\dev\jna\jna\5.17.0\jna-5.17.0.jar;C:\Users\pc\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\pc\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;C:\Users\pc\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\pc\.m2\repository\commons-codec\commons-codec\1.17.1\commons-codec-1.17.1.jar;C:\Users\pc\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\pc\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.4.3\httpclient5-5.4.3.jar;C:\Users\pc\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.3.4\httpcore5-5.3.4.jar;C:\Users\pc\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.3.4\httpcore5-h2-5.3.4.jar;C:\Users\pc\.m2\repository\net\java\dev\jna\jna-platform\5.13.0\jna-platform-5.13.0.jar;C:\Users\pc\.m2\repository\org\slf4j\slf4j-simple\2.0.7\slf4j-simple-2.0.7.jar;C:\Users\pc\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.14.0\extentreports-cucumber7-adapter-1.14.0.jar;C:\Users\pc\.m2\repository\tech\grasshopper\extent-pdf-report\2.12.0\extent-pdf-report-2.12.0.jar;C:\Users\pc\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.14.0\cucumber-pdf-report-2.14.0.jar;C:\Users\pc\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\pc\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\pc\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\pc\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\pc\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\pc\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\pc\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\pc\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\pc\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.5.0\rest-assured-cucumber-pdf-report-1.5.0.jar;C:\Users\pc\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\pc\.m2\repository\com\aventstack\klov-reporter\5.1.0\klov-reporter-5.1.0.jar;C:\Users\pc\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\pc\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\pc\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\pc\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\pc\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\pc\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\pc\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\pc\.m2\repository\tech\grasshopper\htmlextentreporter\1.1.0\htmlextentreporter-1.1.0.jar;C:\Users\pc\.m2\repository\tech\grasshopper\extent-excel-report\1.4.0\extent-excel-report-1.4.0.jar;C:\Users\pc\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\pc\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\pc\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\pc\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\pc\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\pc\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\pc\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\pc\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\pc\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\pc\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\pc\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\pc\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\pc\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\pc\.m2\repository\org\apache\logging\log4j\log4j-core\2.25.1\log4j-core-2.25.1.jar;C:\Users\pc\.m2\repository\org\apache\logging\log4j\log4j-api\2.25.1\log4j-api-2.25.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\pc\AppData\Local\Temp\surefire3225298717676176098\surefirebooter-20250729150203880_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\pc\AppData\Local\Temp\surefire545873773939582231\surefirebooter-20250730153549002_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.7+6-LTS"/>
@@ -47,6 +47,7 @@
     <property name="localRepository" value="C:\Users\pc\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
     <property name="java.io.tmpdir" value="C:\Users\pc\AppData\Local\Temp\"/>
+    <property name="os" value="windows"/>
     <property name="java.version" value="21.0.7"/>
     <property name="user.dir" value="C:\Users\pc\eclipse-workspace\com.ecomsite"/>
     <property name="os.arch" value="amd64"/>
@@ -61,7 +62,91 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="runScenario[&quot;User should be able to login with valid credentials.&quot;, &quot;User login&quot;](1)" classname="runner.TestRunner" time="10.501">
+  <testcase name="runScenario[&quot;Navigate to a Top-level category&quot;, &quot;Category navigation&quot;](1)" classname="runner.TestRunner" time="11.405">
+    <system-out><![CDATA[
+@Regression
+Scenario: Navigate to a Top-level category                       # src/test/resources/features/Category.feature:8
+  Given User is on homepage                                      # stepDefinitions.CategorySteps.user_is_on_homepage()
+  When User logins successfully with valid email id and password # stepDefinitions.CategorySteps.user_logins_successfully_with_valid_email_id_and_password()
+  When User clicks on "Women" Category                           # stepDefinitions.CategorySteps.user_clicks_on_category(java.lang.String)
+Expected product count: 7
+Actual product count: 7
+  Then Product list should be displayed for "Women" category     # stepDefinitions.CategorySteps.product_list_should_be_displayed_for_category(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 3:35:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Navigate to a sub-category&quot;, &quot;Category navigation&quot;](2)" classname="runner.TestRunner" time="8.997">
+    <system-out><![CDATA[
+Scenario: Navigate to a sub-category                             # src/test/resources/features/Category.feature:13
+  Given User is on homepage                                      # stepDefinitions.CategorySteps.user_is_on_homepage()
+  When User logins successfully with valid email id and password # stepDefinitions.CategorySteps.user_logins_successfully_with_valid_email_id_and_password()
+  When User hovers on "Women" Category                           # stepDefinitions.CategorySteps.user_hovers_on_category(java.lang.String)
+  And Clicks on "Tops" sub category                              # stepDefinitions.CategorySteps.clicks_on_sub_category(java.lang.String)
+Expected product count: 2
+Actual product count: 2
+  Then Product list for "Tops" sub category  should be displayed # stepDefinitions.CategorySteps.product_list_for_sub_category_should_be_displayed(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 3:36:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify breadcrumb navigation&quot;, &quot;Category navigation&quot;](3)" classname="runner.TestRunner" time="8.379">
+    <system-out><![CDATA[
+Scenario: Verify breadcrumb navigation                           # src/test/resources/features/Category.feature:19
+  Given User is on homepage                                      # stepDefinitions.CategorySteps.user_is_on_homepage()
+  When User logins successfully with valid email id and password # stepDefinitions.CategorySteps.user_logins_successfully_with_valid_email_id_and_password()
+Clicked on Category: [[ChromeDriver: chrome on windows (fcb0063a435503586fee0144de214e26)] -> xpath: //ul[@class='sf-menu clearfix menu-content sf-js-enabled sf-arrows']/li/a]
+  When User navigates on "Dresses" category                      # stepDefinitions.CategorySteps.user_navigates_on_category(java.lang.String)
+  Then Breadcrumb navigation should be "Home>Dresses"            # stepDefinitions.CategorySteps.breadcrumb_navigation_should(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 3:36:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Filter products by Size and Color&quot;, &quot;Category navigation&quot;](4)" classname="runner.TestRunner" time="16.576">
+    <system-out><![CDATA[
+Scenario: Filter products by Size and Color                               # src/test/resources/features/Category.feature:24
+  Given User is on homepage                                               # stepDefinitions.CategorySteps.user_is_on_homepage()
+  When User logins successfully with valid email id and password          # stepDefinitions.CategorySteps.user_logins_successfully_with_valid_email_id_and_password()
+  When User clicks on "Women" Category                                    # stepDefinitions.CategorySteps.user_clicks_on_category(java.lang.String)
+S
+Size filter applied, size selected : S
+  And Apply Filter "S"                                                    # stepDefinitions.CategorySteps.apply_filter(java.lang.String)
+Beige
+White
+Black
+Orange
+Blue
+Green
+Yellow
+Color filter applied, color selected : Yellow
+  And Apply Filter "Yellow"                                               # stepDefinitions.CategorySteps.apply_filter(java.lang.String)
+Size: S is applied
+Color: Yellow is applied
+Expected product count: 3
+Actual product count: 3
+  Then Only Products with size "S" and color "Yellow" should be displayed # stepDefinitions.CategorySteps.only_products_with_size_and_color_should_be_displayed(java.lang.String,java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 3:36:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;View Products in List&quot;, &quot;Category navigation&quot;](5)" classname="runner.TestRunner" time="9.265">
+    <system-out><![CDATA[
+Scenario: View Products in List                                  # src/test/resources/features/Category.feature:30
+  Given User is on homepage                                      # stepDefinitions.CategorySteps.user_is_on_homepage()
+  When User logins successfully with valid email id and password # stepDefinitions.CategorySteps.user_logins_successfully_with_valid_email_id_and_password()
+  When User clicks on "Women" Category                           # stepDefinitions.CategorySteps.user_clicks_on_category(java.lang.String)
+  And Clicks on List View                                        # stepDefinitions.CategorySteps.clicks_on_list_view()
+  Then Products should be displayed in list view.                # stepDefinitions.CategorySteps.products_should_be_displayed_in_list_view()
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 3:36:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User should be able to login with valid credentials.&quot;, &quot;User login&quot;](6)" classname="runner.TestRunner" time="7.621">
     <system-out><![CDATA[
 Scenario: User should be able to login with valid credentials. # src/test/resources/features/Login.feature:3
   Given User is in login page                                  # stepDefinitions.LoginSteps.user_is_in_login_page()
@@ -69,8 +154,7 @@ Scenario: User should be able to login with valid credentials. # src/test/resour
   And click on Sign in button                                  # stepDefinitions.LoginSteps.click_on_sign_in_button()
   Then USer is able to login successfully                      # stepDefinitions.LoginSteps.u_ser_is_able_to_login_successfully()
 ]]></system-out>
-    <system-err><![CDATA[[main] WARN org.testng.internal.Configuration - Detected a static method [runner.TestRunner.setUp()]. Static configuration methods can cause unexpected behavior.
-Jul 29, 2025 3:02:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jul 30, 2025 3:36:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 138, returning the closest version; found: 137; Please update to a Selenium version that supports CDP version 138
 ]]></system-err>
   </testcase>

@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="3" parallel="tests" name="firefoxTest(failed)">
-    <parameter name="browsers" value="firefox"/>
-    <classes>
-      <class name="runner.TestRunner">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="setUp"/>
-          <include name="runScenario" invocation-numbers="1"/>
-          <include name="tearDownClass"/>
-        </methods>
-      </class> <!-- runner.TestRunner -->
-    </classes>
-  </test> <!-- firefoxTest(failed) -->
   <test thread-count="3" parallel="tests" name="chromeTest(failed)">
+    <parameter name="os" value="windows"/>
     <parameter name="browsers" value="chrome"/>
     <classes>
       <class name="runner.TestRunner">
@@ -22,9 +10,37 @@
           <include name="setUpClass"/>
           <include name="setUp"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="4"/>
+          <include name="runScenario" invocation-numbers="1"/>
         </methods>
       </class> <!-- runner.TestRunner -->
     </classes>
   </test> <!-- chromeTest(failed) -->
+  <test thread-count="3" parallel="tests" name="firefoxTest(failed)">
+    <parameter name="os" value="windows"/>
+    <parameter name="browsers" value="firefox"/>
+    <classes>
+      <class name="runner.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="setUp"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- runner.TestRunner -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+  <test thread-count="3" parallel="tests" name="edgeTest(failed)">
+    <parameter name="os" value="windows"/>
+    <parameter name="browsers" value="edge"/>
+    <classes>
+      <class name="runner.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="setUp"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- runner.TestRunner -->
+    </classes>
+  </test> <!-- edgeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
