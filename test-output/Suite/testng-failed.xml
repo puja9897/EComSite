@@ -14,4 +14,17 @@
       </class> <!-- runner.TestRunner -->
     </classes>
   </test> <!-- firefoxTest(failed) -->
+  <test thread-count="3" parallel="tests" name="chromeTest(failed)">
+    <parameter name="browsers" value="chrome"/>
+    <classes>
+      <class name="runner.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="setUp"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="4"/>
+        </methods>
+      </class> <!-- runner.TestRunner -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

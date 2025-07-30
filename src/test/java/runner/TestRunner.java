@@ -13,14 +13,15 @@ import io.cucumber.testng.CucumberOptions;
     glue = {"stepDefinitions"},
     plugin = {"pretty",
     		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-    monochrome = true
+    monochrome = true,
+    tags = "@Regression"
     
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 	
 	@BeforeMethod
 	@Parameters("browsers")
-	public static void setUp(@Optional("chrome") String browser) {
+	public void setUp(@Optional("chrome") String browser) {
 	    System.setProperty("browser", browser);
 	}
 

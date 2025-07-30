@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 import java.time.Duration;
@@ -48,14 +49,17 @@ public class CategorySteps {
 
 	   sign.clickSignin();
 	   logger.info("User clicked on sign in");
+	
 
 	   assertTrue(homepage.isAccountDisplayed(), "Login unsuccessful");
 		}
 		catch(AssertionError ae) {
 			logger.error("Assertion failed :{}"+ae.getMessage());
+			throw ae; 
 		}
 		catch(Exception e) {
 			logger.debug("Debugging exception: ",e);
+			throw new RuntimeException(e); 
 		}
 	}
 

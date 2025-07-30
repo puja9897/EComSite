@@ -4,6 +4,7 @@ Background:
 Given User is on homepage
 When User logins successfully with valid email id and password
 
+@Regression
 Scenario: Navigate to a Top-level category
 
 When User clicks on "Women" Category

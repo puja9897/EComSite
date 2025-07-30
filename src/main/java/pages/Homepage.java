@@ -2,6 +2,8 @@ package pages;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeoutException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -36,6 +38,8 @@ public class Homepage {
 	@FindBy(css = "a.account")
 	private WebElement accountDetails;
 
+	
+	
 	public void clickCategory(String selectCategory) {
 		int retryCount = 0;
 		while (retryCount < 3) {
@@ -63,7 +67,26 @@ public class Homepage {
 	}
 
 	public boolean isAccountDisplayed() {
-		return accountDetails.isDisplayed();
+	    try {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        wait.until(ExpectedConditions.visibilityOf(accountDetails));
+	        return accountDetails.isDisplayed();
+	    } catch (NoSuchElementException e) {
+	        return false;
+	    }
+	}
+
+	
+	public boolean isAuthFail() {
+	    try {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+	        WebElement error = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ol/li")));
+	        
+
+	        return error.isDisplayed();
+	    } catch (NoSuchElementException e) {
+	        return false;
+	    }
 	}
 
 	public void clickSignIn() {
